@@ -9,7 +9,8 @@ V1 is self-contained and includes:
 - shared append-only JSONL state
 - local provider for offline development
 - federation provider and sample HTTP server
-- provider contracts for future email, social, and custom adapters
+- email providers for AgentMail, OpenMail, Robotomail, Nuntly, Lumbox, and AGMail
+- provider contracts for future social and custom adapters
 
 ## Quickstart
 
@@ -35,3 +36,16 @@ Config is autoloaded from:
 4. `~/.config/agent-message/config.yaml`
 
 Mutable message state is stored separately as JSONL under `~/.local/share/agent-message` by default.
+
+## Email Providers
+
+Email providers can be added directly in config or created lazily with `accounts create <provider>`.
+
+- `agentmail`: set `AGENTMAIL_API_KEY`
+- `openmail`: set `OPENMAIL_API_KEY`
+- `robotomail`: set `ROBOTOMAIL_API_KEY`; optionally configure `providers.robotomail.settings.domainId`
+- `nuntly`: set `NUNTLY_API_KEY`; optionally configure `providers.nuntly.settings.domainId` or `namespaceId`
+- `lumbox`: set `LUMBOX_API_KEY`
+- `agmail`: set `AGMAIL_API_KEY`; optionally configure `providers.agmail.settings.domain`
+
+All providers support the same CLI surface: `send`, `mailbox list`, `messages read`, `threads list`, `threads read`, and `threads reply`.

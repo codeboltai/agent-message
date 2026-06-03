@@ -19,6 +19,12 @@ import {
 } from "@codebolt/agent-message-core";
 import { localProvider } from "@codebolt/agent-message-provider-local";
 import { federationProvider } from "@codebolt/agent-message-provider-federation";
+import { agentMailProvider } from "@codebolt/agent-message-provider-agentmail";
+import { openMailProvider } from "@codebolt/agent-message-provider-openmail";
+import { robotomailProvider } from "@codebolt/agent-message-provider-robotomail";
+import { nuntlyProvider } from "@codebolt/agent-message-provider-nuntly";
+import { lumboxProvider } from "@codebolt/agent-message-provider-lumbox";
+import { agmailProvider } from "@codebolt/agent-message-provider-agmail";
 import { startFederationServer } from "@codebolt/agent-message-federation-server";
 
 interface GlobalOptions {
@@ -35,10 +41,18 @@ interface Runtime {
   registry: ProviderRegistry;
 }
 
+const emailProviderTypes = new Set(["agentmail", "openmail", "robotomail", "nuntly", "lumbox", "agmail"]);
+
 function createRegistry(): ProviderRegistry {
   const registry = new ProviderRegistry();
   registry.register(localProvider);
   registry.register(federationProvider);
+  registry.register(agentMailProvider);
+  registry.register(openMailProvider);
+  registry.register(robotomailProvider);
+  registry.register(nuntlyProvider);
+  registry.register(lumboxProvider);
+  registry.register(agmailProvider);
   return registry;
 }
 
@@ -76,6 +90,12 @@ function providerContext(
   if (!providerConfig && providerId === "federation") {
     providerConfig = { id: "federation", type: "federation", kind: "custom" };
   }
+  if (!providerConfig && providerId === "agentmail") {
+    providerConfig = { id: "agentmail", type: "agentmail", kind: "email" };
+  }
+  if (!providerConfig && emailProviderTypes.has(providerId)) {
+    providerConfig = { id: providerId, type: providerId, kind: "email" };
+  }
   if (!providerConfig) throw new Error(`Provider '${providerId}' is not configured.`);
 
   const adapter = runtimeValue.registry.get(providerConfig.type);
@@ -106,7 +126,7 @@ function ensureProvider(config: AgentMessageConfig, providerId: string): Provide
   const provider: ProviderConfig = {
     id: providerId,
     type: providerId,
-    kind: providerId === "local" ? "local" : providerId === "federation" ? "custom" : "custom",
+    kind: providerId === "local" ? "local" : emailProviderTypes.has(providerId) ? "email" : "custom",
   };
   config.providers[providerId] = provider;
   return provider;

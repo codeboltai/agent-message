@@ -7,3 +7,5 @@ npm install -g @codebolt/agent-message
 agent-message config init
 agent-message providers list
 ```
+
+Included providers: local, federation, AgentMail, OpenMail, Robotomail, Nuntly, Lumbox, and AGMail.

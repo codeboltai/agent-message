@@ -30,8 +30,14 @@
     "@codebolt/agent-message-cli": "0.1.0",
     "@codebolt/agent-message-core": "0.1.0",
     "@codebolt/agent-message-federation-server": "0.1.0",
+    "@codebolt/agent-message-provider-agmail": "0.1.0",
+    "@codebolt/agent-message-provider-agentmail": "0.1.0",
     "@codebolt/agent-message-provider-federation": "0.1.0",
-    "@codebolt/agent-message-provider-local": "0.1.0"
+    "@codebolt/agent-message-provider-local": "0.1.0",
+    "@codebolt/agent-message-provider-lumbox": "0.1.0",
+    "@codebolt/agent-message-provider-nuntly": "0.1.0",
+    "@codebolt/agent-message-provider-openmail": "0.1.0",
+    "@codebolt/agent-message-provider-robotomail": "0.1.0"
   },
   "engines": {
     "node": ">=20.0.0"
