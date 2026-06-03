@@ -1,0 +1,24 @@
+{
+  "name": "@codebolt/agent-message-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@codebolt/agent-message-core": "0.1.0",
+    "@codebolt/agent-message-federation-server": "0.1.0",
+    "@codebolt/agent-message-provider-federation": "0.1.0",
+    "@codebolt/agent-message-provider-local": "0.1.0"
+  }
+}

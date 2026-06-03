@@ -1,0 +1,42 @@
+{
+  "name": "@codebolt/agent-message",
+  "version": "0.1.0",
+  "description": "Central communication CLI and provider runtime for agents.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "agent-message": "dist/cli.cjs"
+  },
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.cts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.cts",
+      "import": "./dist/index.cjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup --config tsup.config.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@codebolt/agent-message-cli": "0.1.0",
+    "@codebolt/agent-message-core": "0.1.0",
+    "@codebolt/agent-message-federation-server": "0.1.0",
+    "@codebolt/agent-message-provider-federation": "0.1.0",
+    "@codebolt/agent-message-provider-local": "0.1.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
