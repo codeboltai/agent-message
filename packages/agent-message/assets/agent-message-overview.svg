@@ -1,0 +1,92 @@
+<svg width="1200" height="560" viewBox="0 0 1200 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Message product overview</title>
+  <desc id="desc">A marketing overview showing Agent Message as a single messaging layer between AI agents and many communication providers.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="0.58" stop-color="#17324D"/>
+      <stop offset="1" stop-color="#14535A"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="256" y1="110" x2="944" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="396" y1="171" x2="804" y2="389" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7DD3FC"/>
+      <stop offset="0.52" stop-color="#A7F3D0"/>
+      <stop offset="1" stop-color="#FDE68A"/>
+    </linearGradient>
+    <filter id="shadow" x="211" y="70" width="778" height="420" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="28"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.02 0 0 0 0 0.04 0 0 0 0 0.09 0 0 0 0.38 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="560" rx="36" fill="url(#bg)"/>
+  <path d="M92 118C168 54 276 47 362 96C438 140 507 135 582 89C671 35 807 46 887 124C957 192 1046 186 1120 136" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="3"/>
+  <path d="M78 456C170 396 265 396 354 446C439 494 527 492 613 437C710 374 817 379 906 445C977 498 1062 501 1134 454" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="3"/>
+
+  <g opacity="0.92">
+    <rect x="74" y="172" width="205" height="70" rx="18" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="104" y="202" fill="#DFF7FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">AI agents</text>
+    <text x="104" y="224" fill="#B7CBD7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">send, read, reply</text>
+    <circle cx="239" cy="207" r="15" fill="#7DD3FC" fill-opacity="0.26"/>
+    <path d="M232 207H246M239 200V214" stroke="#CFFAFE" stroke-width="2" stroke-linecap="round"/>
+
+    <rect x="74" y="318" width="205" height="70" rx="18" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="104" y="348" fill="#DFF7FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Agent apps</text>
+    <text x="104" y="370" fill="#B7CBD7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">CLI and TypeScript</text>
+    <circle cx="239" cy="353" r="15" fill="#A7F3D0" fill-opacity="0.22"/>
+    <path d="M232 353H246M239 346V360" stroke="#D1FAE5" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.92">
+    <rect x="921" y="112" width="205" height="56" rx="16" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="952" y="145" fill="#E8FBFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Local JSONL</text>
+    <rect x="921" y="186" width="205" height="56" rx="16" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="952" y="219" fill="#E8FBFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Federation HTTP</text>
+    <rect x="921" y="260" width="205" height="56" rx="16" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="952" y="293" fill="#E8FBFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">AgentMail</text>
+    <rect x="921" y="334" width="205" height="56" rx="16" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="952" y="367" fill="#E8FBFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">OpenMail</text>
+    <rect x="921" y="408" width="205" height="56" rx="16" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="952" y="441" fill="#E8FBFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">More providers</text>
+  </g>
+
+  <path d="M283 207H384" stroke="#A7F3D0" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round"/>
+  <path d="M283 353H384" stroke="#7DD3FC" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round"/>
+  <path d="M820 280H913" stroke="#FDE68A" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round"/>
+  <path d="M904 280L890 272V288L904 280Z" fill="#FDE68A" fill-opacity="0.74"/>
+
+  <g filter="url(#shadow)">
+    <rect x="256" y="110" width="688" height="340" rx="32" fill="url(#panel)" stroke="#FFFFFF" stroke-opacity="0.22"/>
+    <rect x="300" y="154" width="600" height="252" rx="28" fill="#07111F" fill-opacity="0.42" stroke="url(#accent)" stroke-opacity="0.7"/>
+    <circle cx="350" cy="205" r="22" fill="#7DD3FC" fill-opacity="0.2" stroke="#7DD3FC"/>
+    <path d="M339 205H361M350 194V216" stroke="#CFFAFE" stroke-width="3" stroke-linecap="round"/>
+
+    <text x="386" y="200" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="31" font-weight="800">Agent Message</text>
+    <text x="386" y="230" fill="#BFD6E3" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">One messaging layer for agents, inboxes, and providers.</text>
+
+    <rect x="338" y="270" width="164" height="46" rx="14" fill="#7DD3FC" fill-opacity="0.14" stroke="#7DD3FC" stroke-opacity="0.45"/>
+    <text x="364" y="298" fill="#E0F7FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Send</text>
+    <rect x="518" y="270" width="164" height="46" rx="14" fill="#A7F3D0" fill-opacity="0.13" stroke="#A7F3D0" stroke-opacity="0.45"/>
+    <text x="543" y="298" fill="#E4FFF4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Read mailboxes</text>
+    <rect x="698" y="270" width="164" height="46" rx="14" fill="#FDE68A" fill-opacity="0.13" stroke="#FDE68A" stroke-opacity="0.45"/>
+    <text x="724" y="298" fill="#FFF7D1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Reply threads</text>
+
+    <rect x="338" y="340" width="524" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.08"/>
+    <rect x="350" y="349" width="92" height="8" rx="4" fill="#7DD3FC"/>
+    <rect x="456" y="349" width="122" height="8" rx="4" fill="#A7F3D0"/>
+    <rect x="592" y="349" width="88" height="8" rx="4" fill="#FDE68A"/>
+    <rect x="694" y="349" width="140" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.32"/>
+  </g>
+
+  <text x="74" y="508" fill="#C7D9E4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Provider-neutral messaging for AI agents</text>
+  <text x="927" y="508" fill="#C7D9E4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">CLI + TypeScript runtime</text>
+</svg>

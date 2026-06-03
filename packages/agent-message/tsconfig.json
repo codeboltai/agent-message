@@ -1,8 +1,22 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist"
+    "rootDir": "..",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@codebolt/agent-message-cli": ["../cli/src/index.ts"],
+      "@codebolt/agent-message-core": ["../core/src/index.ts"],
+      "@codebolt/agent-message-federation-server": ["../federation-server/src/index.ts"],
+      "@codebolt/agent-message-provider-agmail": ["../provider-agmail/src/index.ts"],
+      "@codebolt/agent-message-provider-agentmail": ["../provider-agentmail/src/index.ts"],
+      "@codebolt/agent-message-provider-federation": ["../provider-federation/src/index.ts"],
+      "@codebolt/agent-message-provider-local": ["../provider-local/src/index.ts"],
+      "@codebolt/agent-message-provider-lumbox": ["../provider-lumbox/src/index.ts"],
+      "@codebolt/agent-message-provider-nuntly": ["../provider-nuntly/src/index.ts"],
+      "@codebolt/agent-message-provider-openmail": ["../provider-openmail/src/index.ts"],
+      "@codebolt/agent-message-provider-robotomail": ["../provider-robotomail/src/index.ts"]
+    }
   },
   "include": ["src/**/*.ts"]
 }
